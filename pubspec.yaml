@@ -1,0 +1,21 @@
+name: joystick
+description: A joystick widget for your apps.
+version: 0.0.9
+author: Levent KANTAROGLU <lekadesignandapps@mail.com>
+homepage: https://github.com/kaiserleka/
+repository: https://github.com/kaiserleka/joystick/
+documentation: https://github.com/kaiserleka/joystick/
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
