@@ -8,3 +8,6 @@ To set this joystick draggable is optional.
 
 You can also use only vertical or horizontal direction arrows instead of all direction arrows.
 
+![Preview](preview/joystick-ss.gif)
+
+

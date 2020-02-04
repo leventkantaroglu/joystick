@@ -1,1 +1,1 @@
-[Example usage](https://github.com/kaiserleka/joystick/blob/master/example/main.dart),
+[Example usage](https://github.com/kaiserleka/joystick/blob/master/example/main.dart)
