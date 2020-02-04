@@ -1,9 +1,5 @@
-name: joystick
+name: joystick_example
 description: A joystick widget for your apps. This widget has four arrow buttons and it is also draggable.
-version: 1.0.1
-homepage: https://github.com/kaiserleka/
-repository: https://github.com/kaiserleka/joystick/
-documentation: https://github.com/kaiserleka/joystick/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -11,6 +7,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  joystick: 1.0.0
 
 dev_dependencies:
   flutter_test:
