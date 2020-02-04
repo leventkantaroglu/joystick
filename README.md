@@ -1,6 +1,6 @@
 # joystick
 
-A joystick widget for your apps. 
+A joystick widget for Flutter your apps. 
 
 It's design can be customized like background/icon color or opacity.
 
