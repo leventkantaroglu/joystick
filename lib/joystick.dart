@@ -78,9 +78,7 @@ class _JoystickState extends State<Joystick> {
                                 padding: EdgeInsets.all(0),
                                 icon: Icon(
                                   Icons.keyboard_arrow_up,
-                                  color: (widget.iconColor == null)
-                                      ? Colors.black
-                                      : widget.iconColor,
+                                  color: widget.iconColor ?? Colors.black,
                                 ),
                                 onPressed: () {
                                   if (widget.onUpPressed != null)
@@ -122,9 +120,7 @@ class _JoystickState extends State<Joystick> {
                         child: GestureDetector(
                           child: Icon(
                             Icons.drag_handle,
-                            color: (widget.iconColor == null)
-                                ? Colors.black
-                                : widget.iconColor,
+                            color: widget.iconColor ?? Colors.black,
                           ),
                           onPanUpdate: (_values) {
                             if (widget.isDraggable == true) {
@@ -143,9 +139,7 @@ class _JoystickState extends State<Joystick> {
                                 padding: EdgeInsets.all(0),
                                 icon: Icon(
                                   Icons.keyboard_arrow_right,
-                                  color: (widget.iconColor == null)
-                                      ? Colors.black
-                                      : widget.iconColor,
+                                  color: widget.iconColor ?? Colors.black,
                                 ),
                                 onPressed: () {
                                   if (widget.onRightPressed != null)
@@ -173,9 +167,7 @@ class _JoystickState extends State<Joystick> {
                                 padding: EdgeInsets.all(0),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down,
-                                  color: (widget.iconColor == null)
-                                      ? Colors.black
-                                      : widget.iconColor,
+                                  color: widget.iconColor ?? Colors.black,
                                 ),
                                 onPressed: () {
                                   if (widget.onDownPressed != null)
