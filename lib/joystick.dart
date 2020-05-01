@@ -108,9 +108,7 @@ class _JoystickState extends State<Joystick> {
                                 padding: EdgeInsets.all(0),
                                 icon: Icon(
                                   Icons.keyboard_arrow_left,
-                                  color: (widget.iconColor == null)
-                                      ? Colors.black
-                                      : widget.iconColor,
+                                  color: widget.iconColor ?? Colors.black,
                                 ),
                                 onPressed: () {
                                   if (widget.onLeftPressed != null)
