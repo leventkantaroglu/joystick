@@ -2,7 +2,7 @@ name: joystick_example
 description: A joystick widget for your apps. This widget has four arrow buttons and it is also draggable.
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

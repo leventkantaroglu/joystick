@@ -5,33 +5,32 @@ enum Directions { up, down, right, left }
 enum JoystickModes { all, horizontal, vertical }
 
 class Joystick extends StatefulWidget {
-  final Color backgroundColor;
-  final Color iconColor;
-  final double opacity;
+  final Color? backgroundColor;
+  final Color? iconColor;
+  final double? opacity;
   final double size;
-  final bool isDraggable;
-  final JoystickModes joystickMode;
+  final bool? isDraggable;
+  final JoystickModes? joystickMode;
   // callbacks
-  final VoidCallback onUpPressed;
-  final VoidCallback onDownPressed;
-  final VoidCallback onRightPressed;
-  final VoidCallback onLeftPressed;
-  final Function(Directions) onPressed;
+  final VoidCallback? onUpPressed;
+  final VoidCallback? onDownPressed;
+  final VoidCallback? onRightPressed;
+  final VoidCallback? onLeftPressed;
+  final Function(Directions)? onPressed;
   //
   Joystick(
       {this.backgroundColor,
       this.iconColor,
       this.opacity,
       this.isDraggable,
-      @required this.size,
+      required this.size,
       this.joystickMode,
       this.onUpPressed,
       this.onDownPressed,
       this.onLeftPressed,
       this.onRightPressed,
       this.onPressed})
-      : assert(size != null),
-        assert(isDraggable != null);
+      : assert(isDraggable != null);
   @override
   _JoystickState createState() => _JoystickState();
 }
@@ -48,19 +47,21 @@ class _JoystickState extends State<Joystick> {
           bottom: _y,
           right: _x,
           child: GestureDetector(
-            onLongPress: (widget.isDraggable==false)?null:(){
-              setState(() {
-                _x=0;
-                _y=0;
-              });
-            },
-                      child: Container(
+            onLongPress: (widget.isDraggable == false)
+                ? null
+                : () {
+                    setState(() {
+                      _x = 0;
+                      _y = 0;
+                    });
+                  },
+            child: Container(
               height: widget.size,
               width: widget.size,
               decoration: BoxDecoration(
-                  color:
-                      widget.backgroundColor.withOpacity(widget.opacity ?? 1) ??
-                          Colors.grey.withOpacity(widget.opacity ?? 1),
+                  color: widget.backgroundColor
+                          ?.withOpacity(widget.opacity ?? 1) ??
+                      Colors.grey.withOpacity(widget.opacity ?? 1),
                   shape: BoxShape.circle),
               child: Column(children: [
                 // up
@@ -82,9 +83,9 @@ class _JoystickState extends State<Joystick> {
                                 ),
                                 onPressed: () {
                                   if (widget.onUpPressed != null)
-                                    widget.onUpPressed();
+                                    widget.onUpPressed!();
                                   if (widget.onPressed != null)
-                                    widget.onPressed(Directions.up);
+                                    widget.onPressed!(Directions.up);
                                 },
                               ),
                       ),
@@ -110,9 +111,9 @@ class _JoystickState extends State<Joystick> {
                                 ),
                                 onPressed: () {
                                   if (widget.onLeftPressed != null)
-                                    widget.onLeftPressed();
+                                    widget.onLeftPressed!();
                                   if (widget.onPressed != null)
-                                    widget.onPressed(Directions.left);
+                                    widget.onPressed!(Directions.left);
                                 },
                               ),
                       ),
@@ -143,9 +144,9 @@ class _JoystickState extends State<Joystick> {
                                 ),
                                 onPressed: () {
                                   if (widget.onRightPressed != null)
-                                    widget.onRightPressed();
+                                    widget.onRightPressed!();
                                   if (widget.onPressed != null)
-                                    widget.onPressed(Directions.right);
+                                    widget.onPressed!(Directions.right);
                                 },
                               ),
                       )
@@ -171,9 +172,9 @@ class _JoystickState extends State<Joystick> {
                                 ),
                                 onPressed: () {
                                   if (widget.onDownPressed != null)
-                                    widget.onDownPressed();
+                                    widget.onDownPressed!();
                                   if (widget.onPressed != null)
-                                    widget.onPressed(Directions.down);
+                                    widget.onPressed!(Directions.down);
                                 },
                               ),
                       ),

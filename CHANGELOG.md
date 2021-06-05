@@ -1,3 +1,7 @@
+## [1.1.0]
+
+* Support sound null safety
+
 ## [1.0.1]
 
 * ReadMe is updated

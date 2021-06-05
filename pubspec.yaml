@@ -1,12 +1,12 @@
 name: joystick
 description: A joystick widget for your apps. This widget has four arrow buttons and it is also draggable.
 version: 1.0.1
-homepage: https://github.com/kaiserleka/
-repository: https://github.com/kaiserleka/joystick/
-documentation: https://github.com/kaiserleka/joystick/
+homepage: https://github.com/levent-kantaroglu/
+repository: https://github.com/levent-kantaroglu/joystick/
+documentation: https://github.com/levent-kantaroglu/joystick/
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

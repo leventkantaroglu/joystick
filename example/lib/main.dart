@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:joystick/joystick.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
