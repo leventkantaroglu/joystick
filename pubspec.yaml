@@ -1,6 +1,6 @@
 name: joystick
 description: A joystick widget for your apps. This widget has four arrow buttons and it is also draggable.
-version: 1.0.1
+version: 1.1.0
 homepage: https://github.com/levent-kantaroglu/
 repository: https://github.com/levent-kantaroglu/joystick/
 documentation: https://github.com/levent-kantaroglu/joystick/
